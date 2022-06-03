@@ -1,5 +1,7 @@
 # wsjls.api
 
+## 初始化项目
+
 ```bash
 # 初始化项目
 `npm install express mysql2 sequelize sequelize-cli nodemon body-parser -s`
@@ -11,3 +13,10 @@
 `npx sequelize db:migrate`
 # 新建服务文件app.js
 ```
+
+## 联系增加表
+
+<!-- 部门 -->
+`npx sequelize model:generate --name Department --attributes name:string,address:string`
+<!-- 员工 -->
+`npx sequelize model:generate --name staff --attributes account:string,password:string,status:string,did:integer,name:string,sex:string,idNumber:string,workTime:date,leaveTime:date,bornDate:date,info:string`
