@@ -17,6 +17,9 @@
 ## 联系增加表
 
 <!-- 部门 -->
+
 `npx sequelize model:generate --name Department --attributes name:string,address:string`
+
 <!-- 员工 -->
+
 `npx sequelize model:generate --name staff --attributes account:string,password:string,status:string,did:integer,name:string,sex:string,idNumber:string,workTime:date,leaveTime:date,bornDate:date,info:string`
